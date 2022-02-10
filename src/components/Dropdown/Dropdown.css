@@ -1,0 +1,51 @@
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 5px;
+  width: 1023px;
+  height: 47px;
+  background-color: #FF6060;
+  margin: 10px;
+}
+
+.dropdownText {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.collapsible:hover {
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.description {
+  color: #FF6060;
+  background-color: #F7F7F7;
+  border-radius: 5px;
+  width: 1023px;
+  height: 146px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .dropdown {
+    width: 335px;
+    height: 30px;
+  }
+
+  .dropdownText {
+    font-size: 13px;
+  }
+
+  .description {
+    width: 335px;
+    height: 145px;
+  }
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 1200px) {}
