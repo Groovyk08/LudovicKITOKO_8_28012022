@@ -1,5 +1,6 @@
 import '../../styles/About.css'
 import sectionAbout from '../../assets/sectionAbout.png'
+import sectionImgResponsive from '../../assets/sectionImgResponsive.png'
 import Dropdown from '../../components/Dropdown'
 
 function About() {
@@ -9,6 +10,11 @@ function About() {
                 className="imgSectionAbout"
                 src={sectionAbout}
                 alt="imgSectionAbout"
+            ></img>
+            <img
+                className="imgSectionAboutResponsive"
+                src={sectionImgResponsive}
+                alt="imgSectionAboutResponsive"
             ></img>
             <section className="containerAbout">
                 <Dropdown title={'Fiabilité'}>

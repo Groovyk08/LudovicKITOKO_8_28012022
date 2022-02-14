@@ -16,6 +16,10 @@
   border-radius: 10px;
 }
 
+.imgHomeResponsive {
+  display: none;
+}
+
 .cardContainer {
   background-color: #F6F6F6;
   display: flex;
@@ -66,33 +70,39 @@
 
 
   .imgHome {
-    width: 335px;
+    display: none;
+  }
+
+  .imgHomeResponsive {
+    display: block;
+    width: 100%;
     height: 111px;
   }
 
   .cardContainer {
     flex-direction: column;
-    width: 335px;
+    width: 100%;
     margin: 0px;
     background-color: #FFFFFF;
   }
 
   .card {
-    width: 335px;
+    width: 99%;
     height: 255px;
     margin: 5px;
   }
 
   .cardTitle {
     font-size: 12px;
+    inline-size: 70%;
   }
 
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .imgHome {
-    width: 100%;
+    display: none;
   }
 
   .cardContainer {
@@ -100,4 +110,4 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (min-width: 1200px) {}

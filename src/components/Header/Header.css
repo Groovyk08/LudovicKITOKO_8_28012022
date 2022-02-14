@@ -40,18 +40,18 @@
 
 @media only screen and (max-width: 600px) {
   .banner {
-    width: 335px;
+    width: 100%;
     height: 47px;
-    margin: 0px;
+    margin: 0px 0px 10px 0px;
   }
 
   .kasaLogo {
-    width: 145px;
+    width: 50%;
     height: 47px;
   }
 
   .navHeader {
-    width: 140px;
+    width: 50%;
     height: 17px;
     font-size: 12px;
   }

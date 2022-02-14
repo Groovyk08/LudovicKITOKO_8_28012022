@@ -7,6 +7,10 @@
   height: 223px;
 }
 
+.imgSectionAboutResponsive {
+  display: none;
+}
+
 .containerAbout {
   display: flex;
   flex-direction: column;
@@ -19,11 +23,28 @@
 
 @media only screen and (max-width: 600px) {
   .imgSectionAbout {
-    width: 336px;
+    display: none;
+  }
+
+  .imgSectionAboutResponsive {
+    display: block;
+    width: 100%;
     height: 223px;
+    border-radius: 25px;
   }
 }
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .imgSectionAbout {
+    display: none;
+  }
+
+  .imgSectionAboutResponsive {
+    display: block;
+    width: 100%;
+    height: 223px;
+    border-radius: 25px;
+  }
+}
 
 @media only screen and (max-width: 1200px) {}
