@@ -1,25 +1,19 @@
 import '../../styles/Location.css'
-import imgCarrousel from '../../assets/imgCarrousel.png'
-import vectorLeft from '../../assets/vectorLeft.png'
-import vectorRight from '../../assets/vectorRight.png'
+import '../../components/Carousel/Carousel.css'
+// import imgCarrousel from '../../assets/imgCarrousel.png'
 import host from '../../assets/host.png'
 import Dropdown from '../../components/Dropdown'
+import Carousel, { CarouselItem } from '../../components/Carousel'
 
 function Location() {
     return (
         <div>
-            <section className="locationContainer">
-                <img className="imgLeft" src={vectorLeft} alt="vector Left" />
-                <img
-                    className="imgLocation"
-                    src={imgCarrousel}
-                    alt="img Carrousel"
-                />
-                <img
-                    className="imgRight"
-                    src={vectorRight}
-                    alt="vector Right"
-                />
+            <section className="carrouselContainer">
+                <Carousel>
+                    <CarouselItem> Item 1</CarouselItem>
+                    <CarouselItem> Item 2</CarouselItem>
+                    <CarouselItem> Item 3</CarouselItem>
+                </Carousel>
             </section>
             <div className="introduction">
                 <div>
