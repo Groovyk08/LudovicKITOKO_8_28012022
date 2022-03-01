@@ -1,13 +1,16 @@
 import '../../styles/Location.css'
+import '../../components/LocationIntro/Introduction.css'
 import '../../components/Carousel/Carousel.css'
-// import imgCarrousel from '../../assets/imgCarrousel.png'
+//import ads from '../../datas/Ads'
 import host from '../../assets/host.png'
 import Dropdown from '../../components/Dropdown'
 import Carousel, { CarouselItem } from '../../components/Carousel'
+//import LocationIntro from '../../components/LocationIntro'
 
 function Location() {
     return (
         <div>
+            {/* Composant carrousel */}
             <section className="carrouselContainer">
                 <Carousel>
                     <CarouselItem> Item 1</CarouselItem>
@@ -15,7 +18,9 @@ function Location() {
                     <CarouselItem> Item 3</CarouselItem>
                 </Carousel>
             </section>
-            <div className="introduction">
+
+            {/* Composant introduction */}
+            <div className="Introduction">
                 <div>
                     <h1 className="locationTitle">
                         Cozy loft on the Canal Saint-Martin
@@ -35,6 +40,8 @@ function Location() {
                     <div className="rating">********</div>
                 </div>
             </div>
+
+            {/* Composant dropdown */}
             <div className="dropdownContainer">
                 <Dropdown title={'Description'}>
                     <p>

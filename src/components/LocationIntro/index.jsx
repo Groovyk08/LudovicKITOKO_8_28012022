@@ -1,26 +1,25 @@
-import { ads } from '../../datas/Ads'
-import '../../styles/Location.css'
-// import  '../../styles/Introduction.css'
+//import ads from '../../datas/Ads'
+import './Introduction.css'
 
-const locationIntro = ({ id, title, location, tags, name, host, rating }) => {
+function LocationIntro(id, title, location, tags, name, host, rating) {
     return (
-        <div key={ads.id} className="introduction">
+        <div key={id} className="introduction">
             <div>
-                <h1 className="locationTitle">{ads.title}</h1>
-                <h2 className="locationSubtitle">{ads.location}</h2>
+                <h1 className="locationTitle">{title}</h1>
+                <h2 className="locationSubtitle">{location}</h2>
                 <ul className="tagContainer">
-                    <li className="tagName">{ads.tags}</li>
+                    <li className="tagName">{tags}</li>
                 </ul>
             </div>
             <div className="owner">
                 <p className="ownerName">
-                    {ads.name}
-                    <img className="ownerImg" src={ads.host} alt={ads.id} />
+                    {name}
+                    <img className="ownerImg" src={host} alt={id} />
                 </p>
-                <div className="rating">{ads.rating}</div>
+                <div className="rating">{rating}</div>
             </div>
         </div>
     )
 }
 
-export default locationIntro
+export default LocationIntro

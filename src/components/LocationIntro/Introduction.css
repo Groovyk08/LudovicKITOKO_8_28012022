@@ -1,0 +1,114 @@
+.introduction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.locationTitle {
+  font-family: 'Montserrat';
+  font-size: 36px;
+  color: #FF6060;
+  margin-bottom: 0px;
+}
+
+.locationSubtitle {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  color: #FF6060;
+  margin-top: 0px;
+}
+
+.tagContainer {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: center;
+  padding: 0px;
+}
+
+.tagName {
+  text-align: center;
+  list-style: none;
+  color: #FFFFFF;
+  background-color: #FF6060;
+  border: none;
+  border-radius: 10px;
+  width: 115px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.owner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Montserrat';
+  color: #FF6060;
+  height: 52px;
+
+}
+
+.ownerName {
+  display: flex;
+  font-size: 18px;
+  width: 95%;
+}
+
+.ownerImg {
+  width: 64px;
+  width: 64px;
+}
+
+.rating {
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .introduction {
+    flex-direction: column;
+  }
+
+  .locationTitle {
+    font-size: 18px;
+  }
+
+  .locationSubtitle {
+    font-size: 14px;
+  }
+
+  .tagName {
+    width: 84px;
+    height: 14px;
+    font-size: 10px;
+  }
+
+  .owner {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .ownerName {
+    width: 93px;
+    height: 33px;
+    font-size: 12px
+  }
+
+  .ownerImg {
+    width: 32px;
+    width: 32px;
+  }
+
+  .dropdownContainer {
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1200px) {}

@@ -2,6 +2,7 @@ import react, { useState } from 'react'
 import './Carousel.css'
 import vector from '../../assets/vector.png'
 
+// Images dans le carrousel
 export const CarouselItem = ({ children }) => {
     return <div className="carouselItem">{children}</div>
 }
@@ -9,6 +10,7 @@ export const CarouselItem = ({ children }) => {
 const Carousel = ({ children }) => {
     const [activeIndex, setActiveIndex] = useState(0)
 
+    // Conditon pour afficher une nouvelle image dans le carrousel
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
             newIndex = react.Children.count(children) - 1
@@ -20,6 +22,7 @@ const Carousel = ({ children }) => {
 
     return (
         <div className="carousel">
+            {/* Image active dans le carrousel */}
             <div
                 className="inner"
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
@@ -29,8 +32,7 @@ const Carousel = ({ children }) => {
                 })}
             </div>
 
-            {/* Bouttons des slides */}
-
+            {/* Boutton silde */}
             <button
                 className="prev"
                 onClick={() => {
@@ -42,17 +44,19 @@ const Carousel = ({ children }) => {
 
             {react.Children.map(children, (child, index) => {
                 return (
+                    // Numérotation en bas de l'image
                     <div
                         className="numberText"
                         onClick={() => {
                             updateIndex(index)
                         }}
                     >
-                        {index}/{index + 1}
+                        {index + 1}/3
                     </div>
                 )
             })}
 
+            {/* Boutton silde */}
             <button
                 className="next"
                 onClick={() => {
