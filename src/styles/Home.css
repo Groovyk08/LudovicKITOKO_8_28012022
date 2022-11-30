@@ -20,51 +20,6 @@
   display: none;
 }
 
-.cardContainer {
-  background-color: #F6F6F6;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  border-radius: 25px;
-  margin-top: 25px;
-}
-
-.card {
-  position: relative;
-  display: flex;
-  width: 340px;
-  height: 340px;
-  border-radius: 10px;
-  margin: 15px;
-}
-
-.card:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.imgCard {
-  border-radius: 10px;
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
-}
-
-.cardTitle {
-  position: absolute;
-  font-family: 'Montserrat';
-  font-size: 18px;
-  width: 300px;
-  bottom: 0px;
-  left: 15px;
-  color: #F6F6F6;
-  display: flex;
-  align-items: flex-end;
-}
 
 @media only screen and (max-width: 600px) {
 
